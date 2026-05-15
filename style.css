@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #d8efb3, #b9d88f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  width: 900px;
+  max-width: 100%;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+.left-panel {
+  width: 45%;
+  background: #4056a1;
+  color: white;
+  padding: 40px 30px;
+}
+
+.left-panel h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.left-panel p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.left-panel ul {
+  padding-left: 20px;
+}
+
+.left-panel ul li {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.right-panel {
+  width: 55%;
+  padding: 40px 35px;
+  background: #ffffff;
+}
+
+.tab-menu {
+  display: flex;
+  margin-bottom: 25px;
+  background: #eef1fb;
+  border-radius: 12px;
+  padding: 5px;
+}
+
+.tab-menu button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.tab-menu button.active {
+  background: #4056a1;
+  color: white;
+}
+
+.form {
+  display: none;
+}
+
+.form.active {
+  display: block;
+}
+
+.form h2 {
+  margin-bottom: 20px;
+  color: #2c3e70;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 8px;
+  margin-top: 12px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+}
+
+.form input:focus {
+  border-color: #4056a1;
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  background: #7bb661;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #689c51;
+}
+
+#loginMessage,
+#signupMessage {
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-panel,
+  .right-panel {
+    width: 100%;
+  }
+}

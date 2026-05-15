@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard EcoCycle</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #d8efb3, #b9d88f);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .box {
+      width: 700px;
+      max-width: 100%;
+      background: white;
+      border-radius: 18px;
+      padding: 35px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+    }
+
+    h1 {
+      color: #4056a1;
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+
+    .logout-btn {
+      margin-top: 20px;
+      padding: 12px 18px;
+      border: none;
+      background: #dc2626;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .logout-btn:hover {
+      background: #b91c1c;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>Dashboard EcoCycle</h1>
+    <p id="userText"></p>
+    <p>Selamat datang di website pengelolaan sampah.</p>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </div>
+
+  <script>
+    let user = JSON.parse(localStorage.getItem("currentUser"));
+
+    if (!user) {
+      window.location = "index.html";
+    } else {
+      document.getElementById("userText").innerHTML = "Halo, " + user.name;
+    }
+
+    function logout() {
+      localStorage.removeItem("currentUser");
+      window.location = "index.html";
+    }
+  </script>
+</body>
+</html>
