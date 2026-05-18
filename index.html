@@ -6,10 +6,10 @@
   <title>EcoCycle - Login & Sign Up</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
+<body>
   <div class="container">
-    <div class="left-panel">
+    <div class="option-left">
       <h1>EcoCycle</h1>
       <p>Sistem Informasi Pengelolaan Sampah</p>
 
@@ -20,42 +20,35 @@
         <li>Lokasi daur ulang</li>
         <li>Edukasi pengelolaan sampah</li>
       </ul>
+  </div>
+
+  <div class="option-right">
+    <div class="tab-menu">
+      <button id="btnLogin" class="active">Login</button>
+      <button id="btnSignup">Sign Up</button>
     </div>
 
-    <div class="right-panel">
-      <div class="tab-menu">
-        <button id="btnLogin" class="active">Login</button>
-        <button id="btnSignup">Sign Up</button>
-      </div>
+    <form id="loginForm" class="form active">
+      <h2>Login</h2>
+      <label for="loginEmail">Email</label>
+      <input type="email" id="loginEmail" placeholder="Masukkan email">
+      <label for="loginPassword">Password</label>
+      <input type="password" id="loginPassword" placeholder="Masukkan password">
+      <button type="submit" class="submit-btn">Login</button>
+      <p id="loginMessage"></p>
+    </form>
 
-      <form id="loginForm" class="form active">
-        <h2>Login</h2>
-
-        <label for="loginEmail">Email</label>
-        <input type="email" id="loginEmail" placeholder="Masukkan email">
-
-        <label for="loginPassword">Password</label>
-        <input type="password" id="loginPassword" placeholder="Masukkan password">
-
-        <button type="submit" class="submit-btn">Login</button>
-        <p id="loginMessage"></p>
-      </form>
-
-      <form id="signupForm" class="form">
-        <h2>Sign Up</h2>
-
-        <label for="signupName">Nama</label>
-        <input type="text" id="signupName" placeholder="Masukkan nama">
-
-        <label for="signupEmail">Email</label>
-        <input type="email" id="signupEmail" placeholder="Masukkan email">
-
-        <label for="signupPassword">Password</label>
-        <input type="password" id="signupPassword" placeholder="Masukkan password">
-
+    <form id="signupForm" class="form">
+      <h2>Sign Up</h2>
+      <label for="signupName">Nama</label>
+      <input type="text" id="signupName" placeholder="Masukkan nama">
+      <label for="signupEmail">Email</label>
+      <input type="email" id="signupEmail" placeholder="Masukkan email">
+      <label for="signupPassword">Password</label>
+      <input type="password" id="signupPassword" placeholder="Masukkan password">
         <button type="submit" class="submit-btn">Sign Up</button>
         <p id="signupMessage"></p>
-      </form>
+    </form>
     </div>
   </div>
 
