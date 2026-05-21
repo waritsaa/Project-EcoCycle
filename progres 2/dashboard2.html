@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoCycle Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dashboard-body">
+  <nav class="navbar">
+    <div class="left-navbar">
+      <div class="menu-toggle" id="menuToggle">☰</div>
+      <div class="logo">♻ EcoCycle</div>
+    </div>
+  </nav>
+
+  <ul class="nav-menu" id="navMenu">
+    <li>
+      <a href="#">🏠 Home</a>
+    </li>
+    <li>
+      <a href="#">🗑 Lapor Sampah</a>
+    </li>
+    <li>
+      <a href="#">📚 Edukasi Cara Memilah Sampah</a>
+    </li>
+    <li>
+      <a href="#">📍 Lokasi Daur Ulang</a>
+    </li>
+    <li>
+      <a href="index.html">🚪 Logout</a>
+    </li>
+  </ul>
+
+  <section class="dashboard-container">
+    <div class="welcome-card">
+      <h1>Halo, Selamat Datang Kembali👋</h1>
+      <p>Terima kasih telah menggunakan EcoCycle untuk menjaga lingkungan tetap bersih dan sehat.</p>
+    </div>
+
+    <div class="profile-card">
+      <div class="profile-left">
+        <div class="profile-image">👤</div>
+        <div>
+          <h2>Profil Pengguna</h2>
+          <p>Email : user@gmail.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="point-card">
+      <h2>🌟 Poin EcoCycle</h2>
+      <h1>250</h1>
+      <button>Tukar Rewards</button>
+    </div>
+
+    <div class="status-card">
+      <h2>📋 Status Laporan</h2>
+      <div class="status-item">
+        <span>Sampah Plastik</span>
+        <span class="status selesai">Selesai</span>
+      </div>
+
+      <div class="status-item">
+        <span>Sampah Organik</span>
+        <span class="status proses">Diproses</span>
+      </div>
+
+      <div class="status-item">
+        <span>Sampah Sungai</span>
+        <span class="status pending">Pending</span>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    let menuToggle = document.getElementById("menuToggle");
+    let navMenu = document.getElementById("navMenu");
+    menuToggle.onclick = function () {
+      navMenu.classList.toggle("show");
+    };
+  </script>
+
+</body>
+</html>
