@@ -7,30 +7,13 @@ Selain itu, EcoCycle juga menyediakan fitur monitoring dan pengelolaan data bagi
 Dengan adanya EcoCycle, diharapkan proses pengelolaan sampah menjadi lebih efektif, efisien, terorganisir, dan berkelanjutan sehingga dapat menciptakan lingkungan yang lebih bersih, sehat, dan ramah lingkungan. 
 
 **Fitur Utama**
-1.	Masyarakat dapat:
-    - Registrasi dan login
-    - Melaporkan sampah
-    - Upload foto dan lokasi
-    - Melihat status laporan
-    - Melihat edukasi pengelolaan sampah
-    - Mendapat poin/reward
-    - Melihat lokasi pengepul dan daur ulang 
-3.	Petugas kebersihan dapat:
-    - Melihat laporan masuk
-    - Melihat lokasi titik sampah
-    - Mengakses rute pengangkutan
-    - Mengubah status laporan
-    - Menginput data pengangkutan 
-4.	Admin system dapat:
-    - Mengelola data pengguna
-    - Memverifikasi laporan
-    - Mengelola edukasi dan reward
-    - Melihat dashboard monitoring 
-6.	Pengepul / Mitra daur ulang dapat
-    - Melihat stok sampah terpilah
-    - Melihat data jenis dan jumlah sampah
-    - Melakukan pemesanan sampah
-    - Mengatur jadwal pengangkutan sampah 
+| User                   | Informasi yang Diberikan Sistem                                                             | Informasi yang Diterima Sistem                                                                  |
+| ---------------------- | ------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| **Masyarakat**         | Status laporan, konten edukasi, informasi poin/reward, lokasi pengepul, jadwal pengangkutan | Data registrasi/login, laporan sampah (foto + GPS + jenis + deskripsi), permintaan tukar reward |
+| **Petugas Kebersihan** | Daftar laporan terverifikasi, rute pengangkutan, jadwal                                     | Konfirmasi pengambilan, berat sampah, pembaruan status laporan                                  |
+| **Admin**              | Dashboard monitoring, statistik partisipasi, statistik volume sampah                        | Verifikasi laporan, pengelolaan data master pengguna, edukasi, dan reward                       |
+| **Mitra Daur Ulang**   | Informasi stok sampah terpilah, konfirmasi pemesanan                                        | Data pemesanan sampah, jadwal pengambilan                                                       |
+
 
 **#Teams:**
 1. Siti Ananda Rahma {F1D02410095}
@@ -38,4 +21,5 @@ Dengan adanya EcoCycle, diharapkan proses pengelolaan sampah menjadi lebih efekt
 3. Waritsa Wulan Ramadanis {F1D02410136}
 
 **Berikut ini site mapnya:**
-<img width="1536" height="1024" alt="Sitemap" src="https://github.com/user-attachments/assets/df375f3a-6af1-410b-a290-48b9dd2efd00" />
+<img width="721" height="782" alt="EcoCycle-SiteMap drawio" src="https://github.com/user-attachments/assets/5040d44a-ddb9-4044-a85c-7c525fd5b446" />
+
