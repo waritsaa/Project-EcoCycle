@@ -16,9 +16,9 @@ Dengan adanya EcoCycle, diharapkan proses pengelolaan sampah menjadi lebih efekt
 
 
 **#Teams:**
-1. Siti Ananda Rahma {F1D02410095}
-2. Nisa Aulia Kirani {F1D02410131}
-3. Waritsa Wulan Ramadanis {F1D02410136}
+1. Nurhayati Ningsih {F1D02410085}
+2. Siti Ananda Rahma {F1D02410095}
+4. Waritsa Wulan Ramadanis {F1D02410136}
 
 **SiteMap:**
 
