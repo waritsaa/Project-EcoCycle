@@ -6,6 +6,32 @@ EcoCycle menghubungkan beberapa pihak dalam satu platform, yaitu masyarakat, pet
 Selain itu, EcoCycle juga menyediakan fitur monitoring dan pengelolaan data bagi admin serta membantu pengepul atau mitra daur ulang dalam memperoleh informasi mengenai ketersediaan sampah yang dapat didaur ulang. Sistem ini dilengkapi dengan fitur poin dan reward untuk meningkatkan partisipasi masyarakat dalam menjaga kebersihan lingkungan dan mendukung konsep ekonomi sirkular.
 Dengan adanya EcoCycle, diharapkan proses pengelolaan sampah menjadi lebih efektif, efisien, terorganisir, dan berkelanjutan sehingga dapat menciptakan lingkungan yang lebih bersih, sehat, dan ramah lingkungan. 
 
+**Fitur Utama**
+1.	Masyarakat dapat:
+    - Registrasi dan login
+    - Melaporkan sampah
+    - Upload foto dan lokasi
+    - Melihat status laporan
+    - Melihat edukasi pengelolaan sampah
+    - Mendapat poin/reward
+    - Melihat lokasi pengepul dan daur ulang 
+3.	Petugas kebersihan dapat:
+    - Melihat laporan masuk
+    - Melihat lokasi titik sampah
+    - Mengakses rute pengangkutan
+    - Mengubah status laporan
+    - Menginput data pengangkutan 
+4.	Admin system dapat:
+    - Mengelola data pengguna
+    - Memverifikasi laporan
+    - Mengelola edukasi dan reward
+    - Melihat dashboard monitoring 
+6.	Pengepul / Mitra daur ulang dapat
+    - Melihat stok sampah terpilah
+    - Melihat data jenis dan jumlah sampah
+    - Melakukan pemesanan sampah
+    - Mengatur jadwal pengangkutan sampah 
+
 **#Teams:**
 1. Siti Ananda Rahma {F1D02410095}
 2. Nisa Aulia Kirani {F1D02410131}
