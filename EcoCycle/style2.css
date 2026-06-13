@@ -1,0 +1,954 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600..900&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  color: #1c2b1f;
+}
+
+/* =========================================================
+   AUTH PAGE (Login & Sign Up)
+========================================================= */
+.auth-body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255,255,255,0.12) 0, transparent 35%),
+    radial-gradient(circle at 85% 80%, rgba(255,255,255,0.10) 0, transparent 40%),
+    linear-gradient(160deg, #1f4d2c 0%, #2e7d32 45%, #6b9b3f 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.auth-shell {
+  width: 960px;
+  max-width: 100%;
+  background: #fbfaf4;
+  border-radius: 28px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  box-shadow: 0 30px 70px rgba(15, 40, 20, 0.35);
+  position: relative;
+}
+
+/* Left panel — brand / story side */
+.auth-brand {
+  background:
+    radial-gradient(circle at 30% 110%, rgba(255, 214, 102, 0.35) 0, transparent 55%),
+    linear-gradient(150deg, #16331f 0%, #2e7d32 75%);
+  color: #f4f7ec;
+  padding: 56px 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-brand::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.12);
+  top: -120px;
+  right: -120px;
+}
+
+.auth-brand::after {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.08);
+  bottom: -80px;
+  left: -80px;
+}
+
+.brand-mark {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Fraunces', serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  position: relative;
+  z-index: 1;
+}
+
+.brand-mark .leaf {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  border: 1px solid rgba(255,255,255,0.25);
+}
+
+.brand-copy {
+  position: relative;
+  z-index: 1;
+  margin-top: 40px;
+}
+
+.brand-copy .eyebrow {
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #c8e6c9;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.brand-copy h1 {
+  font-family: 'Fraunces', serif;
+  font-size: 40px;
+  line-height: 1.15;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.brand-copy p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #dfe9d8;
+  max-width: 380px;
+}
+
+.brand-steps {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 36px;
+}
+
+.brand-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  font-size: 14px;
+  color: #eef5e9;
+}
+
+.brand-step .num {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 13px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.14);
+  border: 1px solid rgba(255,255,255,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Right panel — forms */
+.auth-forms {
+  padding: 56px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tab-menu {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 36px;
+  background: #eef2e6;
+  border-radius: 14px;
+  padding: 6px;
+}
+
+.tab-menu button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Manrope', sans-serif;
+  letter-spacing: 0.02em;
+  color: #5b6b57;
+  transition: all 0.25s ease;
+}
+
+.tab-menu button.active {
+  background: #2e7d32;
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(46, 125, 50, 0.28);
+}
+
+.form {
+  display: none;
+}
+
+.form.active {
+  display: block;
+  animation: fadeIn 0.35s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.form h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #16331f;
+  margin-bottom: 6px;
+}
+
+.form .subtitle {
+  font-size: 14px;
+  color: #768472;
+  margin-bottom: 28px;
+}
+
+.field {
+  margin-bottom: 18px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #3c4a3a;
+  letter-spacing: 0.01em;
+}
+
+.form input {
+  width: 100%;
+  padding: 13px 16px;
+  border: 1.5px solid #dde5d8;
+  border-radius: 12px;
+  outline: none;
+  font-size: 14px;
+  font-family: 'Manrope', sans-serif;
+  background: #fbfcf9;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form input:focus {
+  border-color: #2e7d32;
+  box-shadow: 0 0 0 4px rgba(46, 125, 50, 0.10);
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 8px;
+  padding: 14px;
+  border: none;
+  background: #2e7d32;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: 'Manrope', sans-serif;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.submit-btn:hover {
+  background: #1b5e20;
+  transform: translateY(-1px);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+#loginMessage,
+#signupMessage {
+  margin-top: 14px;
+  font-size: 13.5px;
+  font-weight: 700;
+  min-height: 18px;
+}
+
+.msg-success { color: #2e7d32; }
+.msg-error { color: #c62828; }
+
+/* =========================================================
+   DASHBOARD / GENERAL APP
+========================================================= */
+.dashboard-body {
+  background: #eef8ea;
+  font-family: 'Manrope', sans-serif;
+  min-height: 100vh;
+}
+
+.navbar {
+  background: #2e7d32;
+  padding: 18px 25px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.left-navbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  font-family: 'Fraunces', serif;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.menu-toggle {
+  font-size: 30px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 270px;
+  height: 100%;
+  background: white;
+  list-style: none;
+  padding-top: 90px;
+  transition: 0.3s;
+  box-shadow: 4px 0 20px rgba(0,0,0,0.15);
+  z-index: 100;
+}
+
+.nav-menu.show {
+  left: 0;
+}
+
+.nav-menu li {
+  border-bottom: 1px solid #eee;
+}
+
+.nav-menu li a {
+  display: block;
+  padding: 18px 24px;
+  text-decoration: none;
+  color: #2e7d32;
+  font-weight: 700;
+  font-size: 14.5px;
+  transition: 0.2s;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a.active-link {
+  background: #e8f5e9;
+  padding-left: 32px;
+}
+
+.dashboard-container {
+  padding: 40px;
+  display: grid;
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.welcome-card {
+  background: linear-gradient(120deg, #2e7d32, #6fae45);
+  padding: 40px;
+  border-radius: 22px;
+  color: #fff;
+}
+
+.welcome-card h1 {
+  font-family: 'Fraunces', serif;
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.welcome-card p {
+  font-size: 16px;
+  opacity: 0.95;
+}
+
+.profile-card,
+.point-card,
+.status-card,
+.content-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.profile-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-image {
+  width: 80px;
+  height: 80px;
+  background: #c8e6c9;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  flex-shrink: 0;
+}
+
+.point-card {
+  text-align: center;
+}
+
+.point-card h2 {
+  font-family: 'Fraunces', serif;
+  color: #1b5e20;
+  font-size: 20px;
+}
+
+.point-card h1 {
+  font-family: 'Fraunces', serif;
+  font-size: 48px;
+  color: #2e7d32;
+  margin: 18px 0;
+}
+
+.btn-primary, .point-card button, .submit-btn-sm {
+  padding: 13px 26px;
+  border: none;
+  background: #2e7d32;
+  color: white;
+  border-radius: 12px;
+  font-size: 14.5px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.2s ease;
+}
+
+.btn-primary:hover, .point-card button:hover, .submit-btn-sm:hover {
+  background: #1b5e20;
+}
+
+.status-card h2,
+.content-card h2 {
+  font-family: 'Fraunces', serif;
+  margin-bottom: 20px;
+  color: #1f4d2c;
+  font-size: 21px;
+}
+
+.status-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 16px;
+  background: #f6f8f3;
+  border-radius: 14px;
+  gap: 12px;
+}
+
+.status-item .info small {
+  display: block;
+  color: #7a8a76;
+  margin-top: 4px;
+}
+
+.status {
+  padding: 6px 14px;
+  border-radius: 10px;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.selesai, .status-selesai { background: #43a047; }
+.proses, .status-diproses { background: #fb8c00; }
+.pending, .status-pending { background: #e53935; }
+.status-ditolak { background: #757575; }
+
+/* =========================================================
+   FORM PAGES (Lapor Sampah, etc)
+========================================================= */
+.form-page {
+  background: white;
+  padding: 32px;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-page h2 {
+  font-family: 'Fraunces', serif;
+  color: #1f4d2c;
+  margin-bottom: 6px;
+  font-size: 24px;
+}
+
+.form-page .subtitle {
+  font-size: 14px;
+  color: #768472;
+  margin-bottom: 26px;
+}
+
+.form-page label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  margin: 16px 0 8px;
+  color: #3c4a3a;
+}
+
+.form-page input,
+.form-page select,
+.form-page textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid #dde5d8;
+  border-radius: 12px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-page input:focus,
+.form-page select:focus,
+.form-page textarea:focus {
+  border-color: #2e7d32;
+}
+
+.gps-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f1f7ee;
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-top: 16px;
+  font-size: 13.5px;
+}
+
+.gps-box.active {
+  color: #1b5e20;
+  background: #e3f2e3;
+}
+
+.gps-box button {
+  border: none;
+  background: #2e7d32;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* Edukasi cards */
+.edukasi-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.edukasi-item {
+  background: #f6f8f3;
+  border-radius: 16px;
+  padding: 22px;
+  border-left: 5px solid #2e7d32;
+}
+
+.edukasi-item.tag-organik { border-left-color: #43a047; }
+.edukasi-item.tag-anorganik { border-left-color: #1e88e5; }
+.edukasi-item.tag-b3 { border-left-color: #e53935; }
+
+.edukasi-item .tag {
+  display: inline-block;
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 8px;
+  background: #e8f0e3;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.edukasi-item h3 {
+  font-family: 'Fraunces', serif;
+  margin-bottom: 8px;
+  color: #1f4d2c;
+}
+
+.edukasi-item p {
+  font-size: 14px;
+  color: #4c5a49;
+  line-height: 1.6;
+}
+
+/* Mitra / lokasi cards */
+.mitra-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 18px;
+  background: #f6f8f3;
+  border-radius: 14px;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+
+.mitra-item h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 17px;
+  color: #1f4d2c;
+  margin-bottom: 4px;
+}
+
+.mitra-item p {
+  font-size: 13.5px;
+  color: #6d7c6a;
+  margin-top: 2px;
+}
+
+/* Jadwal table-ish */
+.jadwal-item {
+  display: grid;
+  grid-template-columns: 90px 1fr auto;
+  gap: 16px;
+  align-items: center;
+  padding: 16px;
+  background: #f6f8f3;
+  border-radius: 14px;
+  margin-bottom: 12px;
+}
+
+.jadwal-day {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  color: #2e7d32;
+  text-align: center;
+  background: #e3f2e3;
+  border-radius: 10px;
+  padding: 10px 6px;
+  font-size: 13px;
+}
+
+.jadwal-item .area {
+  font-weight: 700;
+  color: #1f4d2c;
+  margin-bottom: 4px;
+}
+
+.jadwal-item .time {
+  font-size: 13px;
+  color: #768472;
+}
+
+/* Alerts */
+.alert {
+  padding: 14px 18px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.alert-success { background: #e3f2e3; color: #1b5e20; }
+.alert-error { background: #fdecea; color: #c62828; }
+.alert-empty { background: #f6f8f3; color: #768472; text-align: center; }
+
+/* =========================================================
+   ROLE THEMES — Petugas & Admin
+========================================================= */
+
+/* PETUGAS — biru/teal "operasional" */
+.theme-petugas.dashboard-body { background: #eaf3fb; }
+.theme-petugas .navbar { background: #1565c0; }
+.theme-petugas .nav-menu li a { color: #1565c0; }
+.theme-petugas .nav-menu li a:hover,
+.theme-petugas .nav-menu li a.active-link { background: #e3f0fc; }
+.theme-petugas .welcome-card { background: linear-gradient(120deg, #1565c0, #4f9fe0); }
+.theme-petugas .point-card h1,
+.theme-petugas .status-card h2,
+.theme-petugas .content-card h2,
+.theme-petugas .form-page h2,
+.theme-petugas .profile-card h2 { color: #0d47a1; }
+.theme-petugas .point-card button,
+.theme-petugas .btn-primary,
+.theme-petugas .submit-btn,
+.theme-petugas .submit-btn-sm { background: #1565c0; }
+.theme-petugas .point-card button:hover,
+.theme-petugas .btn-primary:hover,
+.theme-petugas .submit-btn:hover,
+.theme-petugas .submit-btn-sm:hover { background: #0d47a1; }
+.theme-petugas .form-page input:focus,
+.theme-petugas .form-page select:focus,
+.theme-petugas .form-page textarea:focus { border-color: #1565c0; }
+.theme-petugas .jadwal-day { background: #e3f0fc; color: #1565c0; }
+.theme-petugas .edukasi-item { border-left-color: #1565c0; }
+
+/* ADMIN — oranye/gelap "kontrol" */
+.theme-admin.dashboard-body { background: #fdf3ea; }
+.theme-admin .navbar { background: #d35400; }
+.theme-admin .nav-menu li a { color: #d35400; }
+.theme-admin .nav-menu li a:hover,
+.theme-admin .nav-menu li a.active-link { background: #fdf0e4; }
+.theme-admin .welcome-card { background: linear-gradient(120deg, #d35400, #f0a868); }
+.theme-admin .point-card h1,
+.theme-admin .status-card h2,
+.theme-admin .content-card h2,
+.theme-admin .form-page h2,
+.theme-admin .profile-card h2 { color: #a04000; }
+.theme-admin .point-card button,
+.theme-admin .btn-primary,
+.theme-admin .submit-btn,
+.theme-admin .submit-btn-sm { background: #d35400; }
+.theme-admin .point-card button:hover,
+.theme-admin .btn-primary:hover,
+.theme-admin .submit-btn:hover,
+.theme-admin .submit-btn-sm:hover { background: #a04000; }
+.theme-admin .form-page input:focus,
+.theme-admin .form-page select:focus,
+.theme-admin .form-page textarea:focus { border-color: #d35400; }
+.theme-admin .jadwal-day { background: #fdf0e4; color: #d35400; }
+.theme-admin .edukasi-item { border-left-color: #d35400; }
+.theme-admin .stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+}
+.theme-admin .stat-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 22px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+.theme-admin .stat-box .num {
+  font-family: 'Fraunces', serif;
+  font-size: 34px;
+  font-weight: 700;
+  color: #d35400;
+}
+.theme-admin .stat-box .label {
+  font-size: 13px;
+  color: #8a8a8a;
+  margin-top: 6px;
+}
+
+/* PENGEPUL — hijau tosca "marketplace" */
+.theme-pengepul.dashboard-body { background: #e9f7f5; }
+.theme-pengepul .navbar { background: #00897b; }
+.theme-pengepul .nav-menu li a { color: #00897b; }
+.theme-pengepul .nav-menu li a:hover,
+.theme-pengepul .nav-menu li a.active-link { background: #e0f2f0; }
+.theme-pengepul .welcome-card { background: linear-gradient(120deg, #00897b, #4dd0c9); }
+.theme-pengepul .point-card h1,
+.theme-pengepul .status-card h2,
+.theme-pengepul .content-card h2,
+.theme-pengepul .form-page h2,
+.theme-pengepul .profile-card h2 { color: #00564b; }
+.theme-pengepul .point-card button,
+.theme-pengepul .btn-primary,
+.theme-pengepul .submit-btn,
+.theme-pengepul .submit-btn-sm { background: #00897b; }
+.theme-pengepul .point-card button:hover,
+.theme-pengepul .btn-primary:hover,
+.theme-pengepul .submit-btn:hover,
+.theme-pengepul .submit-btn-sm:hover { background: #00564b; }
+.theme-pengepul .form-page input:focus,
+.theme-pengepul .form-page select:focus,
+.theme-pengepul .form-page textarea:focus { border-color: #00897b; }
+
+/* Generic action buttons (approve/reject) used across role dashboards */
+.btn-approve, .btn-reject, .btn-secondary {
+  border: none;
+  padding: 9px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: 'Manrope', sans-serif;
+}
+.btn-approve { background: #43a047; color: #fff; }
+.btn-approve:hover { background: #2e7d32; }
+.btn-reject { background: #e53935; color: #fff; }
+.btn-reject:hover { background: #b71c1c; }
+.btn-secondary { background: #eef0ec; color: #3c4a3a; }
+.btn-secondary:hover { background: #dfe4d9; }
+
+.action-group { display: flex; gap: 8px; flex-wrap: wrap; }
+
+/* Simple table */
+.table-wrap { overflow-x: auto; }
+.simple-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+}
+.simple-table th, .simple-table td {
+  text-align: left;
+  padding: 12px 14px;
+  border-bottom: 1px solid #eef1ea;
+}
+.simple-table th {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #8a978a;
+  font-weight: 800;
+}
+.simple-table img.thumb {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+  .auth-shell {
+    grid-template-columns: 1fr;
+  }
+  .auth-brand {
+    display: none;
+  }
+  .auth-forms {
+    padding: 40px 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 20px;
+  }
+  .welcome-card h1 {
+    font-size: 28px;
+  }
+  .jadwal-item {
+    grid-template-columns: 70px 1fr;
+  }
+  .jadwal-item .action {
+    grid-column: 1 / -1;
+  }
+}
+/* =========================================================
+   ROLE SELECTOR (Sign Up & Login)
+========================================================= */
+.role-field {
+  margin-bottom: 18px;
+}
+
+.role-field > label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #3c4a3a;
+  letter-spacing: 0.01em;
+}
+
+.role-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.role-card {
+  position: relative;
+  border: 1.5px solid #dde5d8;
+  border-radius: 12px;
+  padding: 12px 10px;
+  background: #fbfcf9;
+  cursor: pointer;
+  text-align: center;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
+}
+
+.role-card input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.role-card .role-icon {
+  font-size: 22px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.role-card .role-name {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #3c4a3a;
+  display: block;
+}
+
+.role-card .role-desc {
+  font-size: 10.5px;
+  color: #8a978a;
+  display: block;
+  margin-top: 2px;
+}
+
+.role-card:hover {
+  border-color: #b9cdb2;
+  transform: translateY(-1px);
+}
+
+.role-card.selected {
+  border-color: #2e7d32;
+  background: #eef8ea;
+  box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.12);
+}
+
+.role-card.selected .role-icon,
+.role-card.selected .role-name { color: #2e7d32; }
+
+/* Role accent colors per card when selected */
+.role-card[data-role="petugas"].selected {
+  border-color: #1565c0; background: #e3f0fc; box-shadow: 0 0 0 3px rgba(21,101,192,0.12);
+}
+.role-card[data-role="petugas"].selected .role-icon,
+.role-card[data-role="petugas"].selected .role-name { color: #1565c0; }
+
+.role-card[data-role="admin"].selected {
+  border-color: #d35400; background: #fdf0e4; box-shadow: 0 0 0 3px rgba(211,84,0,0.12);
+}
+.role-card[data-role="admin"].selected .role-icon,
+.role-card[data-role="admin"].selected .role-name { color: #d35400; }
+
+.role-card[data-role="pengepul"].selected {
+  border-color: #00897b; background: #e0f2f0; box-shadow: 0 0 0 3px rgba(0,137,123,0.12);
+}
+.role-card[data-role="pengepul"].selected .role-icon,
+.role-card[data-role="pengepul"].selected .role-name { color: #00897b; }
