@@ -20,6 +20,7 @@ Dengan adanya EcoCycle, diharapkan proses pengelolaan sampah menjadi lebih efekt
 2. Nisa Aulia Kirani {F1D02410131}
 3. Waritsa Wulan Ramadanis {F1D02410136}
 
-**Berikut ini site mapnya:**
+**SiteMap:**
+
 <img width="721" height="782" alt="EcoCycle-SiteMap drawio" src="https://github.com/user-attachments/assets/5040d44a-ddb9-4044-a85c-7c525fd5b446" />
 
