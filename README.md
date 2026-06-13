@@ -6,10 +6,21 @@ EcoCycle menghubungkan beberapa pihak dalam satu platform, yaitu masyarakat, pet
 Selain itu, EcoCycle juga menyediakan fitur monitoring dan pengelolaan data bagi admin serta membantu pengepul atau mitra daur ulang dalam memperoleh informasi mengenai ketersediaan sampah yang dapat didaur ulang. Sistem ini dilengkapi dengan fitur poin dan reward untuk meningkatkan partisipasi masyarakat dalam menjaga kebersihan lingkungan dan mendukung konsep ekonomi sirkular.
 Dengan adanya EcoCycle, diharapkan proses pengelolaan sampah menjadi lebih efektif, efisien, terorganisir, dan berkelanjutan sehingga dapat menciptakan lingkungan yang lebih bersih, sehat, dan ramah lingkungan. 
 
+**Fitur Utama**
+| User                   | Informasi yang Diberikan Sistem                                                             | Informasi yang Diterima Sistem                                                                  |
+| ---------------------- | ------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| **Masyarakat**         | Status laporan, konten edukasi, informasi poin/reward, lokasi pengepul, jadwal pengangkutan | Data registrasi/login, laporan sampah (foto + GPS + jenis + deskripsi), permintaan tukar reward |
+| **Petugas Kebersihan** | Daftar laporan terverifikasi, rute pengangkutan, jadwal                                     | Konfirmasi pengambilan, berat sampah, pembaruan status laporan                                  |
+| **Admin**              | Dashboard monitoring, statistik partisipasi, statistik volume sampah                        | Verifikasi laporan, pengelolaan data master pengguna, edukasi, dan reward                       |
+| **Mitra Daur Ulang**   | Informasi stok sampah terpilah, konfirmasi pemesanan                                        | Data pemesanan sampah, jadwal pengambilan                                                       |
+
+
 **#Teams:**
 1. Siti Ananda Rahma {F1D02410095}
 2. Nisa Aulia Kirani {F1D02410131}
 3. Waritsa Wulan Ramadanis {F1D02410136}
 
-**Berikut ini site mapnya:**
-<img width="1536" height="1024" alt="Sitemap" src="https://github.com/user-attachments/assets/df375f3a-6af1-410b-a290-48b9dd2efd00" />
+**SiteMap:**
+
+<img width="721" height="782" alt="EcoCycle-SiteMap drawio" src="https://github.com/user-attachments/assets/5040d44a-ddb9-4044-a85c-7c525fd5b446" />
+
