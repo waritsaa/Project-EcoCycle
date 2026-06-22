@@ -6,6 +6,14 @@ EcoCycle menghubungkan beberapa pihak dalam satu platform, yaitu masyarakat, pet
 Selain itu, EcoCycle juga menyediakan fitur monitoring dan pengelolaan data bagi admin serta membantu pengepul atau mitra daur ulang dalam memperoleh informasi mengenai ketersediaan sampah yang dapat didaur ulang. Sistem ini dilengkapi dengan fitur poin dan reward untuk meningkatkan partisipasi masyarakat dalam menjaga kebersihan lingkungan dan mendukung konsep ekonomi sirkular.
 Dengan adanya EcoCycle, diharapkan proses pengelolaan sampah menjadi lebih efektif, efisien, terorganisir, dan berkelanjutan sehingga dapat menciptakan lingkungan yang lebih bersih, sehat, dan ramah lingkungan. 
 
+## 👥 Team Members
+
+| Nama | NIM | Role | Responsibilities |
+|------|------|------|-------------------|
+| Nurhayati Ningsih | F1D02410085 | Fullstack Developer | Frontend: Membangun halaman Login, Register, Dashboard Masyarakat, Pelaporan Sampah, Edukasi, Reward, dan Profil menggunakan HTML5, CSS3, dan JavaScript. Backend: Implementasi PHP Native untuk autentikasi, session, pelaporan sampah, reward point, dan pengelolaan profil. |
+| Siti Ananda Rahma | F1D02410095 | Fullstack Developer | Frontend: Membangun Dashboard Admin dan Dashboard Petugas. Backend: Implementasi CRUD laporan sampah, status laporan, serta jadwal pengangkutan menggunakan PHP Native dan MySQL. |
+| Waritsa Wulan Ramadanis | F1D02410136 | Fullstack Developer | Frontend: Membangun halaman Lokasi Pengepul dan Profil Pengguna. Backend: Pengelolaan data pengepul dan integrasi database MySQL. Dokumentasi: Pengujian dan dokumentasi sistem. |
+
 **Fitur Utama**
 | User                   | Informasi yang Diberikan Sistem                                                             | Informasi yang Diterima Sistem                                                                  |
 | ---------------------- | ------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
@@ -14,13 +22,33 @@ Dengan adanya EcoCycle, diharapkan proses pengelolaan sampah menjadi lebih efekt
 | **Admin**              | Dashboard monitoring, statistik partisipasi, statistik volume sampah                        | Verifikasi laporan, pengelolaan data master pengguna, edukasi, dan reward                       |
 | **Mitra Daur Ulang**   | Informasi stok sampah terpilah, konfirmasi pemesanan                                        | Data pemesanan sampah, jadwal pengambilan                                                       |
 
-
-**#Teams:**
-1. Nurhayati Ningsih {F1D02410085}
-2. Siti Ananda Rahma {F1D02410095}
-4. Waritsa Wulan Ramadanis {F1D02410136}
-
 **SiteMap:**
 
 <img width="721" height="782" alt="EcoCycle-SiteMap drawio" src="https://github.com/user-attachments/assets/5040d44a-ddb9-4044-a85c-7c525fd5b446" />
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- HTML5
+- CSS3
+- JavaScript
+
+### Backend
+
+- PHP Native
+- Session Authentication
+- CRUD Operations
+- Server-side Validation
+
+### Database
+
+- MySQL
+
+### Development Tools
+
+- Visual Studio Code
+- XAMPP
+- Git
+- GitHub
 
