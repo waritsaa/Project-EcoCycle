@@ -22,9 +22,68 @@ Dengan adanya EcoCycle, diharapkan proses pengelolaan sampah menjadi lebih efekt
 | **Admin**              | Dashboard monitoring, statistik partisipasi, statistik volume sampah                        | Verifikasi laporan, pengelolaan data master pengguna, edukasi, dan reward                       |
 | **Mitra Daur Ulang**   | Informasi stok sampah terpilah, konfirmasi pemesanan                                        | Data pemesanan sampah, jadwal pengambilan                                                       |
 
-**SiteMap:**
+## 📂 Sitemap / Menu Structure
 
-<img width="721" height="782" alt="EcoCycle-SiteMap drawio" src="https://github.com/user-attachments/assets/5040d44a-ddb9-4044-a85c-7c525fd5b446" />
+```text
+Project-EcoCycle
+│
+├── assets
+│   ├── css
+│   │   └── style2.css
+│   └── js
+│       └── script2.js
+│
+├── actions
+│   ├── login.php
+│   ├── signUp.php
+│   ├── logout.php
+│   ├── simpan_laporan.php
+│   ├── edit_profil.php
+│   └── simpan_marketplace.php
+│
+├── config
+│   └── koneksi.php
+│
+├── database
+│   └── ecocycle.sql
+│
+├── uploads
+│   ├── laporan
+│   ├── marketplace
+│   └── profil
+│
+├── pages
+│   │
+│   ├── masyarakat
+│   │   ├── dashboard2.php
+│   │   ├── lapor.php
+│   │   ├── status_laporan.php
+│   │   ├── jadwal_pengangkutan.php
+│   │   ├── lokasi_pengepul.php
+│   │   ├── marketplace_masyarakat.php
+│   │   ├── edukasi.php
+│   │   ├── reward.php
+│   │   └── profilMasyarakat.php
+│   │
+│   ├── admin
+│   │   ├── admin_dashboard.php
+│   │   ├── admin_laporan.php
+│   │   └── profilAdmin.php
+│   │
+│   ├── petugas
+│   │   ├── petugas_dashboard.php
+│   │   ├── petugas_laporan.php
+│   │   ├── petugas_jadwal.php
+│   │   ├── petugas_rute.php
+│   │   └── profilPetugas.php
+│   │
+│   └── pengepul
+│       ├── pengepul_dashboard.php
+│       ├── marketplace_pengepul.php
+│       └── profilMitra.php
+│
+└── index.php
+```
 
 ## 🛠️ Tech Stack
 
