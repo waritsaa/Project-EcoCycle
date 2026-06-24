@@ -113,11 +113,14 @@ Project-EcoCycle
 
 ## Beberapa Tampilan Website
 Halaman Login EcoCycle
-<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/e82cf9ad-cabf-4f8d-8c96-90f0d443a031" />
+<img width="1600" height="838" alt="login" src="https://github.com/user-attachments/assets/358a67d4-848e-472e-b673-f112bc59c5a0" />
+
 Halaman Dashboard Mitra/Pengepul EcoCycle
-<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/27c7e291-31ef-4b35-b50b-4ab31668b0c1" />
+<img width="1600" height="838" alt="hm pengepul" src="https://github.com/user-attachments/assets/b654d11b-9807-47af-bc06-44f43182b44a" />
+
 Halaman Edit Profil Admin
-<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/64124e38-8696-4279-85bb-5bfb77c5f97d" />
+<img width="1600" height="835" alt="edit profil" src="https://github.com/user-attachments/assets/f0a0833d-975f-4dcb-98b7-34bb6ca6f23d" />
+
 
 
 
