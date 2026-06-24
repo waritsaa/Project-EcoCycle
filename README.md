@@ -111,3 +111,13 @@ Project-EcoCycle
 - Git
 - GitHub
 
+## Beberapa Tampilan Website
+Halaman Login EcoCycle
+<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/e82cf9ad-cabf-4f8d-8c96-90f0d443a031" />
+Halaman Dashboard Mitra/Pengepul EcoCycle
+<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/27c7e291-31ef-4b35-b50b-4ab31668b0c1" />
+Halaman Edit Profil Admin
+<img width="960" height="564" alt="image" src="https://github.com/user-attachments/assets/64124e38-8696-4279-85bb-5bfb77c5f97d" />
+
+
+
