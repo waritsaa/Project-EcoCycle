@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoCycle - Login & Daftar</title>
+  <link rel="stylesheet" href="assets/css/style2.css">
+</head>
+
+<body class="auth-body">
+  <div class="auth-shell">
+    <div class="auth-brand">
+
+      <div class="brand-mark"><span class="leaf">♻</span>EcoCycle</div>
+      <div class="brand-copy">
+        <div class="eyebrow">Sistem Informasi Pengelolaan Sampah</div>
+        <h1>Mulai dari satu laporan, lingkunganmu jadi lebih bersih.</h1>
+        <p>Laporkan titik penumpukan sampah, pantau prosesnya, kumpulkan poin, dan temukan mitra daur ulang terdekat — semua dalam satu platform.</p>
+      </div>
+      <div class="brand-steps">
+        <div class="brand-step"><span class="num">1</span><span>Foto &amp; tandai lokasi sampah lewat GPS</span></div>
+        <div class="brand-step"><span class="num">2</span><span>Petugas memverifikasi &amp; mengangkut sampah</span></div>
+        <div class="brand-step">
+          <span class="num">3</span>
+          <span>Dapatkan poin dan tukar dengan reward</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="auth-forms">
+      <div class="tab-menu">
+        <button id="btnLogin" class="active">Masuk</button>
+        <button id="btnSignup">Daftar</button>
+      </div>
+
+      <form id="loginForm" class="form active">
+        <h2>Selamat Datang</h2>
+        <p class="subtitle">Masuk untuk melanjutkan ke dashboard EcoCycle.</p>
+
+        <div class="role-field">
+          <label>Masuk sebagai</label>
+          <div class="role-grid" id="loginRoleGrid">
+            <label class="role-card selected" data-role="masyarakat">
+              <input type="radio" name="loginRole" value="masyarakat" checked>
+              <span class="role-icon">🧑</span>
+              <span class="role-name">Masyarakat</span>
+              <span class="role-desc">Lapor & pantau sampah</span>
+            </label>
+            <label class="role-card" data-role="petugas">
+              <input type="radio" name="loginRole" value="petugas">
+              <span class="role-icon">🚛</span>
+              <span class="role-name">Petugas</span>
+              <span class="role-desc">Pengangkutan sampah</span>
+            </label>
+            <label class="role-card" data-role="admin">
+              <input type="radio" name="loginRole" value="admin">
+              <span class="role-icon">🛠</span>
+              <span class="role-name">Admin</span>
+              <span class="role-desc">Kelola sistem</span>
+            </label>
+            <label class="role-card" data-role="pengepul">
+              <input type="radio" name="loginRole" value="pengepul">
+              <span class="role-icon">♻</span>
+              <span class="role-name">Mitra / Pengepul</span>
+              <span class="role-desc">Daur ulang sampah terpilah</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="loginEmail">Email</label>
+          <input type="email" id="loginEmail" placeholder="nama@email.com" required>
+        </div>
+        <div class="field">
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" placeholder="Masukkan password" required>
+        </div>
+        <button type="submit" class="submit-btn">Masuk</button>
+        <p id="loginMessage"></p>
+      </form>
+
+      <form id="signupForm" class="form">
+        <h2>Buat Akun</h2>
+        <p class="subtitle">Daftar gratis dan mulai berpartisipasi menjaga lingkungan.</p>
+
+        <div class="role-field">
+          <label>Daftar sebagai</label>
+          <div class="role-grid" id="signupRoleGrid">
+            <label class="role-card selected" data-role="masyarakat">
+              <input type="radio" name="signupRole" value="masyarakat" checked>
+              <span class="role-icon">🧑</span>
+              <span class="role-name">Masyarakat</span>
+              <span class="role-desc">Lapor & pantau sampah</span>
+            </label>
+            <label class="role-card" data-role="petugas">
+              <input type="radio" name="signupRole" value="petugas">
+              <span class="role-icon">🚛</span>
+              <span class="role-name">Petugas</span>
+              <span class="role-desc">Pengangkutan sampah</span>
+            </label>
+            <label class="role-card" data-role="pengepul">
+              <input type="radio" name="signupRole" value="pengepul">
+              <span class="role-icon">♻</span>
+              <span class="role-name">Mitra / Pengepul</span>
+              <span class="role-desc">Daur ulang sampah terpilah</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="signupName">Nama Lengkap</label>
+          <input type="text" id="signupName" placeholder="Nama kamu" required>
+        </div>
+        <div class="field">
+          <label for="signupEmail">Email</label>
+          <input type="email" id="signupEmail" placeholder="nama@email.com" required>
+        </div>
+        <div class="field">
+          <label for="signupPassword">Password</label>
+          <input type="password" id="signupPassword" placeholder="Buat password" required>
+        </div>
+        <button type="submit" class="submit-btn">Daftar</button>
+        <p id="signupMessage"></p>
+      </form>
+    </div>
+
+  </div>
+
+  <script src="assets/js/script2.js"></script>
+</body>
+</html>
