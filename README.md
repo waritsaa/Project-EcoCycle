@@ -1,4 +1,5 @@
-# EcoCycle
+# **EcoCycle -- Sistem Pengelolaan Sampah Berbasis Web**
+
 EcoCycle merupakan sistem informasi pengelolaan sampah berbasis web yang dirancang untuk membantu masyarakat dalam proses pelaporan, pengelolaan, pengangkutan, edukasi, serta daur ulang sampah secara digital dan terintegrasi. Sistem ini hadir sebagai solusi terhadap berbagai permasalahan pengelolaan sampah yang masih dilakukan secara manual, seperti keterlambatan pelaporan, kurangnya informasi lokasi sampah, rendahnya kesadaran masyarakat dalam memilah sampah, serta belum optimalnya pemanfaatan sampah yang memiliki nilai ekonomi.
 
 EcoCycle menghubungkan beberapa pihak dalam satu platform, yaitu masyarakat, petugas kebersihan, admin sistem, dan pengepul atau mitra daur ulang. Melalui sistem ini, masyarakat dapat melaporkan titik penumpukan sampah dengan mengunggah foto dan lokasi secara langsung, memperoleh edukasi mengenai pengelolaan dan pemilahan sampah, serta mengetahui lokasi pengepul atau tempat daur ulang sampah di sekitar mereka.
