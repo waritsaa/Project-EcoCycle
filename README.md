@@ -490,6 +490,9 @@ Kami menggunakan AI sebagai alat bantu dalam beberapa bagian pengembangan, di an
 - **`simpan_laporan.php`**: AI membantu menyusun logika transaksi database (`mysqli_begin_transaction`) untuk memastikan konsistensi data antara penyimpanan laporan dan penambahan poin reward.
 - **`edit_profil.php`**: AI membantu menyusun pemetaan kode error upload PHP menjadi pesan yang lebih informatif bagi pengguna.
 - **`login.php`**: AI membantu menyusun logika validasi role mismatch dan mekanisme redirect berbasis role ke dashboard yang sesuai.
+
+---
+
 ## Beberapa Tampilan Website
 Halaman Login EcoCycle
 <img width="1600" height="838" alt="login" src="https://github.com/user-attachments/assets/358a67d4-848e-472e-b673-f112bc59c5a0" />
