@@ -111,6 +111,23 @@ Project-EcoCycle
 - Git
 - GitHub
 
+## 🗄️ DBMS Configuration
+
+| Konfigurasi | Detail |
+|------------|---------|
+| DBMS Used | MySQL |
+| Database Name | `ecocycle` |
+| Default Port | `3306` |
+
+## 🔌 Database Connection Example:
+<?php
+$conn = mysqli_connect("localhost", "root", "", "ecocycle");
+
+if (!$conn) {
+    die("Koneksi gagal: " . mysqli_connect_error());
+}
+?>
+
 ## Beberapa Tampilan Website
 Halaman Login EcoCycle
 <img width="1600" height="838" alt="login" src="https://github.com/user-attachments/assets/358a67d4-848e-472e-b673-f112bc59c5a0" />
