@@ -119,7 +119,9 @@ Project-EcoCycle
 | Database Name | `ecocycle` |
 | Default Port | `3306` |
 
-## 🔌 Database Connection Example:
+## Database Connection Example
+
+```php
 <?php
 $conn = mysqli_connect("localhost", "root", "", "ecocycle");
 
@@ -127,6 +129,7 @@ if (!$conn) {
     die("Koneksi gagal: " . mysqli_connect_error());
 }
 ?>
+```
 
 ## Beberapa Tampilan Website
 Halaman Login EcoCycle
